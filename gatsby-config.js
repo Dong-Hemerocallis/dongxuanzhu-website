@@ -66,12 +66,10 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          // gatsby-remark-relative-images-v2 must
+          'gatsby-remark-gifs',
+          'gatsby-remark-static-images',
+                  // gatsby-remark-relative-images-v2 must
           // go before gatsby-remark-images
-          {
-            resolve: `gatsby-remark-relative-images-v2`,
-          },
-          
         ],
       },
     },
@@ -81,16 +79,18 @@ module.exports = {
         resolve: `gatsby-plugin-mdx`,
         options: {
           gatsbyRemarkPlugins: [
-            {
+
+              {
               resolve: `gatsby-remark-images`,
               options: {
-                maxWidth: 1200,
+                maxWidth: 800,
               },
             },
+            'gatsby-remark-gifs',
+            'gatsby-remark-static-images',
           ],
         },
       },
-
       {
         resolve: `gatsby-source-filesystem`,
         options: {
@@ -110,4 +110,5 @@ module.exports = {
     },
   ].filter(Boolean),
   pathPrefix: "/reponame",
+  
 }
