@@ -40,5 +40,15 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "gh-pages": "^3.2.3"
-  }
+  },
+  "main": "gatsby-config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dong-Hemerocallis/dongxuanzhu-website.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Dong-Hemerocallis/dongxuanzhu-website/issues"
+  },
+  "homepage": "https://Dong-Hemerocallis.github.io/dongxuanzhu-website"
 }
