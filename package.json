@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "name": "dongxuanzhu",
+  "description": "Minimalistic portfolio with full-width grid, page transitions, support for additional MDX pages, and a focus on large images",
+  "version": "0.3.10",
+  "author": "dongxuanzhu",
+  "license": "0BSD",
+  "starter-name": "dongxuanzhu-portfolio",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
+    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@lekoarts/gatsby-theme-emma": "^2.0.0",
+    "gatsby": "^3.6.1",
+    "gatsby-plugin-gatsby-cloud": "^2.6.1",
+    "gatsby-plugin-google-analytics": "^3.6.0",
+    "gatsby-plugin-manifest": "^3.6.0",
+    "gatsby-plugin-netlify": "^3.6.1",
+    "gatsby-plugin-offline": "^4.6.0",
+    "gatsby-plugin-sharp": "^3.8.0",
+    "gatsby-plugin-sitemap": "^4.2.0",
+    "gatsby-plugin-theme-ui": "^0.9.1",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.22",
+    "gatsby-remark-copy-linked-files": "^4.5.0",
+    "gatsby-remark-images": "^5.5.0",
+    "gatsby-remark-relative-images-v2": "^0.1.5",
+    "gatsby-remark-static-images": "^1.2.1",
+    "gatsby-transformer-remark": "^4.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "theme-ui": "^0.9.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "gh-pages": "^3.2.3"
+  }
+}
